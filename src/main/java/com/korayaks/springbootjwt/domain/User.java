@@ -10,11 +10,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import static javax.persistence.GenerationType.AUTO;
-
-@Entity
 @Data
 @NoArgsConstructor
+@Entity
 @AllArgsConstructor
+@Table(name="Users")
 public class User {
     @Id
     @GeneratedValue(strategy = AUTO)
